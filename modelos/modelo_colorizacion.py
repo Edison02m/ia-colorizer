@@ -1,3 +1,5 @@
+#Desarrollado por Edison Azogue 
+
 import tensorflow as tf
 from tensorflow.keras.layers import Conv2D, UpSampling2D, InputLayer
 from tensorflow.keras.models import Sequential

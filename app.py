@@ -1,3 +1,5 @@
+#Desarrollado por Edison Azogue 
+
 import os
 from modelos.modelo_colorizacion import construir_modelo
 from utilidades.utilidades_imagenes import cargar_imagen, guardar_imagen

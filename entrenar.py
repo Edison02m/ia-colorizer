@@ -1,3 +1,5 @@
+#Desarrollado por Edison Azogue 
+
 import tensorflow as tf
 from modelos.modelo_colorizacion import construir_modelo
 from tensorflow.keras.datasets import cifar10
