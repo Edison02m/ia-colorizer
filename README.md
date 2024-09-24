@@ -30,7 +30,7 @@ Este proyecto utiliza un modelo de aprendizaje profundo para colorizar imágenes
 
 1. Clona este repositorio:
    ```
-   git clone https://github.com/Edison02m/ia-colorizer.git
+   git clone https://github.com/tu-usuario/proyecto-colorizacion-imagenes.git
    ```
 
 2. Instala las dependencias:
@@ -40,36 +40,47 @@ Este proyecto utiliza un modelo de aprendizaje profundo para colorizar imágenes
 
 ## Uso
 
-### Entrenamiento del Modelo
+### Colorización de Imágenes con Modelo Pre-entrenado
 
-Para entrenar el modelo, ejecuta:
+El proyecto ya incluye un modelo pre-entrenado. Para colorizar imágenes usando este modelo:
 
-```
-python entrenar.py
-```
+1. Coloca tus imágenes en blanco y negro en la carpeta `datos/entrada/`
+2. Ejecuta:
+   ```
+   python app.py
+   ```
+3. Las imágenes colorizadas se guardarán en la carpeta `datos/salida/`
 
-Este script cargará el conjunto de datos CIFAR-10, preparará los datos, entrenará el modelo y guardará los pesos en `modelos/pesos_del_modelo.weights.h5`.
+### Mejora del Modelo
 
-### Colorización de Imágenes
+Si deseas mejorar la calidad de la colorización, puedes entrenar el modelo por más tiempo o con más datos:
 
-Para colorizar imágenes, coloca tus imágenes en blanco y negro en la carpeta `datos/entrada/` y ejecuta:
+1. Ajusta los parámetros de entrenamiento en `entrenar.py` (por ejemplo, aumenta el número de épocas o el tamaño del conjunto de datos)
+2. Ejecuta:
+   ```
+   python entrenar.py
+   ```
+3. El modelo mejorado se guardará, reemplazando los pesos anteriores
 
-```
-python app.py
-```
-
-Las imágenes colorizadas se guardarán en la carpeta `datos/salida/`.
+Nota: Un entrenamiento más prolongado o con más datos puede resultar en una mejor colorización, pero también aumentará el tiempo de procesamiento.
 
 ## Estructura del Código
 
 - `modelos/modelo_colorizacion.py`: Define la arquitectura del modelo de colorización.
 - `utilidades/utilidades_imagenes.py`: Contiene funciones para cargar y guardar imágenes.
 - `app.py`: Script principal para colorizar imágenes.
-- `entrenar.py`: Script para entrenar el modelo.
+- `entrenar.py`: Script para entrenar y mejorar el modelo.
 
 ## Contribuciones
 
-Las contribuciones son bienvenidas. Por favor, abre un issue para discutir cambios importantes antes de hacer un pull request.
+Las contribuciones son bienvenidas y pueden ayudar a mejorar la calidad de la colorización. Si deseas contribuir:
+
+1. Haz un fork del repositorio.
+2. Crea una nueva rama para tu característica o mejora.
+3. Realiza tus cambios y haz commit de ellos.
+4. Abre un pull request describiendo tus cambios.
+
+Para cambios importantes, por favor abre primero un issue para discutir lo que te gustaría cambiar.
 
 ## Licencia
 
